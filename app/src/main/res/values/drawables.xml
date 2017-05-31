@@ -1,0 +1,6 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item name="ic_chevron_left_white_36dp" type="drawable">@drawable/ic_chevron_left_white_36dp</item>
+    <item name="ic_assignment_black_24dp" type="drawable">@drawable/ic_assignment_black_24dp</item>
+    <item name="ic_history_black_24dp" type="drawable">@drawable/ic_history_black_24dp</item>
+    <item name="ic_add_white_24dp" type="drawable">@drawable/ic_add_white_24dp</item>
+</resources>
