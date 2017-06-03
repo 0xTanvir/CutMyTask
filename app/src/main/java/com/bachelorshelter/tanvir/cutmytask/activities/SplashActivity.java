@@ -1,4 +1,4 @@
-package com.bachelorshelter.tanvir.cutmytask;
+package com.bachelorshelter.tanvir.cutmytask.activities;
 
 import android.content.Intent;
 import android.os.SystemClock;
