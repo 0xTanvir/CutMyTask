@@ -2,7 +2,7 @@
     <string name="app_name">CutMyTask</string>
     <string name="today">Today</string>
     <string name="task">Task</string>
-    <string name="title_history">History</string>
+    <string name="title_unfinished_task">Unfinished Task</string>
     <string name="no_task_title">No Task !</string>
     <string name="no_task_desc1">What the hell are you doing for today?</string>
     <string name="no_task_desc2">Don\'t make me useless like you. Go move your ass and make a list of your task for today.

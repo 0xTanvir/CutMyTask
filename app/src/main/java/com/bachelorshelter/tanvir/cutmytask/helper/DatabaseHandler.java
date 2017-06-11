@@ -187,6 +187,30 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     }
 
+    //Update Task's everything
+    public void updateTask(Task task,int id){
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        String strSQL = "UPDATE "+TABLE_TASK+" SET "+KEY_ACTION+" = "+task.getAction()+","
+                +KEY_TASK_DESC+" = '"+task.getTaskDesc()+"',"
+                +KEY_TASK_DATE+" = '"+task.getDate()+"',"
+                +KEY_BACK_COLOR+" = '"+task.getBackColor()
+                +"' WHERE "+KEY_ID+" = "+ id;
+        db.execSQL(strSQL);
+
+
+    }
+
+    //Update Task's everything
+    public void deleteTask(int id){
+        SQLiteDatabase db = this.getWritableDatabase();
+        //DELETE FROM tutorials_tbl WHERE tutorial_id=3
+        String strSQL = "DELETE FROM "+TABLE_TASK+" WHERE "+KEY_ID+" = "+ id;
+        db.execSQL(strSQL);
+
+
+    }
+
 
 
     // closing database

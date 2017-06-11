@@ -17,7 +17,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.DatePicker;
-import android.widget.Toast;
 
 import com.bachelorshelter.tanvir.cutmytask.R;
 import com.bachelorshelter.tanvir.cutmytask.model.Task;
@@ -55,7 +54,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,TaskEditActivity.class));
+                Intent intent = new Intent(new Intent(MainActivity.this,TaskEditActivity.class));
+                intent.putExtra("origin","forNew");
+                startActivity(intent);
             }
         });
 
@@ -236,8 +237,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_history) {
-            startActivity(new Intent(MainActivity.this,HistoryActivity.class));
+        if (id == R.id.unfinished_task) {
+            startActivity(new Intent(MainActivity.this,UnfinishedTaskActivity.class));
         } else if (id == R.id.nav_task_manager) {
 
         } /*else if (id == R.id.nav_slideshow) {

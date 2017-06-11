@@ -75,6 +75,13 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskHolder> {
             public void onClick() {
                 super.onClick();
                 Intent intent = new Intent(inflater.getContext(), TaskEditActivity.class);
+                intent.putExtra("origin","forEdit");
+                intent.putExtra("editDate",item.getDate().substring(0,10));
+                intent.putExtra("editTime",item.getDate().substring(11,16));
+                intent.putExtra("editTaskDesc",item.getTaskDesc());
+                intent.putExtra("editColor",item.getBackColor());
+                intent.putExtra("editAction",item.getAction());
+                intent.putExtra("editId",item.getId());
                 inflater.getContext().startActivity(intent);
             }
 
