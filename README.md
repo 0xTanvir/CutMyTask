@@ -1,4 +1,5 @@
 # CutMyTask
-A simple todo list task cutter for Everyday's task
+A simple todo list task manager for Everyday's task
 
-## Task
+##Some Screenshot
+
